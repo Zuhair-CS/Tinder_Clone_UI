@@ -1,0 +1,40 @@
+* {
+    font-family: "Radio Canada Big", sans-serif;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+.preload .bg{
+    background-image: url("load.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.preload .logo{
+    position: fixed;
+    height: 10vh;
+    animation: movelogo 0.5s ease-in 0s infinite alternate;
+}
+@keyframes movelogo{
+    from{
+        height: 10vh;
+        top:45vh;
+        margin-left:45%;
+    }to{
+        height: 12vh;
+        top:44vh;
+        margin-left:44.5%;
+    }
+}
+.preload {
+    animation: hide 0s 1.5s forwards;
+}
+@keyframes hide {
+    from{
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
